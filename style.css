@@ -1,13 +1,12 @@
-/* Estilos para body, .container, form, input, button, a, header, footer */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    min-height: 100vh; /* Para garantir que a altura da página ocupe pelo menos a altura da viewport */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Para que o conteúdo da página empurre o rodapé para baixo */
+    flex-direction: column; 
 }
 
 .container {
@@ -17,7 +16,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Para que o conteúdo principal ocupe o espaço restante */
+    flex: 1; 
 }
 
 form {
@@ -69,7 +68,6 @@ header, footer {
     overflow: hidden;
 }
 
-/* Estilos específicos para a lista de usuários */
 #user-list {
     list-style-type: none;
     padding: 0;
@@ -98,7 +96,6 @@ header, footer {
     background-color: #cc0000;
 }
 
-/* Estilos para o rodapé fixo */
 .footer-bottom {
     position: fixed; 
     bottom: 0; 
