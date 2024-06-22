@@ -1,0 +1,111 @@
+/* Estilos para body, .container, form, input, button, a, header, footer */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh; /* Para garantir que a altura da página ocupe pelo menos a altura da viewport */
+    display: flex;
+    flex-direction: column; /* Para que o conteúdo da página empurre o rodapé para baixo */
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Para que o conteúdo principal ocupe o espaço restante */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #007bff; 
+    border-radius: 5px;
+    background-color: transparent; 
+    color: #007bff; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Estilos específicos para a lista de usuários */
+#user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user-list li {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para o rodapé fixo */
+.footer-bottom {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #333;
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center;
+}
